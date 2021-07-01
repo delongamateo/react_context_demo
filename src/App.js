@@ -9,14 +9,14 @@ import {
 
 import { About, Home, Login } from './pages';
 
-const UserContext = React.createContext({
+export const UserContext = React.createContext({
   loggedIn: false,
   userName: null,
   userId: null,
 });
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const [userUuid, setUserUuid] = useState(null);
   const [userSalutation, setUserSalutation] = useState(null);
 
